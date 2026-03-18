@@ -1,4 +1,4 @@
-import { C, R, BigText, Sub, Tag, Line, CTA, ImgBlock, VideoBlock, ServiceHero, Definition, SectionHead, StatBar, StepItem, FeatureCard, Insight, BottomCTA, TierCard, AddOnsBar, CustomBuildSection } from "../shared";
+import { C, R, BigText, Sub, Tag, Line, CTA, ImgBlock, VideoBlock, ServiceHero, Definition, SectionHead, StatBar, StepItem, FeatureCard, Insight, BottomCTA } from "../shared";
 import { InsightMoneyIcon, InsightTargetIcon, InsightChartIcon } from "../icons";
 
 const SocialMedia = ({ setPage }: { setPage: (p: string) => void }) => (
@@ -68,76 +68,6 @@ const SocialMedia = ({ setPage }: { setPage: (p: string) => void }) => (
       { num: "24/7", label: "Your brand working while you sleep" },
     ]} />
 
-    {/* ── TIERS (Foundation / Signature / Flagship) ── */}
-    <section style={{ background: C.lightCream, padding: "clamp(60px, 12vw, 120px) 20px" }}>
-      <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-        <SectionHead tag="Service Tiers">
-          CHOOSE YOUR <span style={{ color: C.gold }}>TIER</span>
-        </SectionHead>
-
-        <R>
-          <p style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: "15px", color: C.textMid, lineHeight: 1.7,
-            maxWidth: "750px", marginBottom: "48px",
-          }}>
-            Foundation covers the essentials. Signature adds partnerships, email, and reporting. Flagship is full-service with sales funnels, content studio access, ambassador programs, and crisis management.
-          </p>
-        </R>
-
-        <div className="grid-cards">
-          <R>
-            <TierCard
-              tier="FOUNDATION"
-              items={[
-                { name: "Social Media Strategy" },
-                { name: "Content Creation & Scheduling", detail: "10 posts/month" },
-                { name: "Community Management" },
-              ]}
-            />
-          </R>
-          <R delay={0.1}>
-            <TierCard
-              tier="SIGNATURE"
-              label="Most Popular"
-              highlight
-              items={[
-                { name: "Social Media Strategy" },
-                { name: "Content Creation & Scheduling", detail: "20 posts/month" },
-                { name: "Community Management" },
-                { name: "Partnership/Influencer Outreach" },
-                { name: "Email Marketing" },
-                { name: "Bi-Weekly Analytics Reports" },
-              ]}
-            />
-          </R>
-          <R delay={0.2}>
-            <TierCard
-              tier="FLAGSHIP"
-              items={[
-                { name: "Social Media Strategy" },
-                { name: "Content Creation & Scheduling", detail: "30 posts/month" },
-                { name: "Community Management" },
-                { name: "Partnership/Influencer Outreach" },
-                { name: "Email Marketing" },
-                { name: "Sales Funnel Management" },
-                { name: "Content Studio Access" },
-                { name: "Brand Ambassador Program" },
-                { name: "Crisis Management" },
-                { name: "Weekly Analytics & Strategy Reports" },
-              ]}
-            />
-          </R>
-        </div>
-
-        <R delay={0.3}>
-          <AddOnsBar addOns={["Extra Platforms", "Paid Ad Management", "Email Campaigns", "Influencer Outreach"]} />
-        </R>
-      </div>
-    </section>
-
-    {/* ── CUSTOM BUILD ── */}
-    <CustomBuildSection onContact={() => setPage("contact")} />
 
     {/* ── WHAT WE DO (not what typical SMMs do) ── */}
     <section style={{ background: C.cream, padding: "clamp(60px, 12vw, 120px) 20px" }}>

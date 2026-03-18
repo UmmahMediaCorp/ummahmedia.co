@@ -1,4 +1,4 @@
-import { C, R, BigText, Sub, Tag, Line, CTA, ImgBlock, VideoBlock, ServiceHero, Definition, SectionHead, StatBar, StepItem, FeatureCard, Insight, BottomCTA, TierCard, AddOnsBar, CustomBuildSection } from "../shared";
+import { C, R, BigText, Sub, Tag, Line, CTA, ImgBlock, VideoBlock, ServiceHero, Definition, SectionHead, StatBar, StepItem, FeatureCard, Insight, BottomCTA } from "../shared";
 import { InsightKeyIcon, InsightChartIcon, InsightTargetIcon } from "../icons";
 
 const BrandDevelopment = ({ setPage }: { setPage: (p: string) => void }) => (
@@ -68,80 +68,6 @@ const BrandDevelopment = ({ setPage }: { setPage: (p: string) => void }) => (
       { num: "100%", label: "Gaps identified & filled" },
     ]} />
 
-    {/* ── TIERS (Foundation / Signature / Flagship) ── */}
-    <section style={{ background: C.lightCream, padding: "clamp(60px, 12vw, 120px) 20px" }}>
-      <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-        <SectionHead tag="Service Tiers">
-          CHOOSE YOUR <span style={{ color: C.gold }}>TIER</span>
-        </SectionHead>
-
-        <R>
-          <p style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: "15px", color: C.textMid, lineHeight: 1.7,
-            maxWidth: "750px", marginBottom: "48px",
-          }}>
-            Every tier builds on the last. Start with Foundation for the essentials, go Signature for full strategy + lead generation, or go Flagship for a complete custom build with a dedicated strategist.
-          </p>
-        </R>
-
-        <div className="grid-cards">
-          <R>
-            <TierCard
-              tier="FOUNDATION"
-              items={[
-                { name: "Brand Audit & Competitor Research" },
-                { name: "Visual Identity", detail: "Logo + colors + typography" },
-                { name: "Brand Guidelines Document" },
-                { name: "Brand Videos (Short-Form)", detail: "3 videos" },
-                { name: "Branded Graphics", detail: "10 graphics" },
-                { name: "Distribution Plan" },
-              ]}
-            />
-          </R>
-          <R delay={0.1}>
-            <TierCard
-              tier="SIGNATURE"
-              label="Most Popular"
-              highlight
-              items={[
-                { name: "Marketing Strategy & Roadmap" },
-                { name: "Content Strategy & Editorial Calendar" },
-                { name: "Brand Videos (Short + Long Form)", detail: "6 videos" },
-                { name: "Branded Graphics & Assets", detail: "20 graphics" },
-                { name: "Lead Magnet Creation" },
-                { name: "Email Marketing Campaign", detail: "1 sequence" },
-                { name: "Landing Page", detail: "1 page" },
-                { name: "Distribution & Rollout Plan" },
-              ]}
-            />
-          </R>
-          <R delay={0.2}>
-            <TierCard
-              tier="FLAGSHIP"
-              items={[
-                { name: "In-Depth Competitive Analysis" },
-                { name: "Funnel Architecture & Journey Mapping" },
-                { name: "Custom Video Production", detail: "10+ videos" },
-                { name: "Unlimited Branded Assets" },
-                { name: "Email Marketing Funnels", detail: "Multi-sequence" },
-                { name: "Multiple Lead Magnets" },
-                { name: "Multiple Landing Pages" },
-                { name: "Brand Collateral Pack" },
-                { name: "Dedicated Brand Strategist" },
-              ]}
-            />
-          </R>
-        </div>
-
-        <R delay={0.3}>
-          <AddOnsBar addOns={["Extra Videos", "Extra Graphics", "Additional Landing Pages", "Additional Email Sequences", "Brand Collateral Pack"]} />
-        </R>
-      </div>
-    </section>
-
-    {/* ── CUSTOM BUILD ── */}
-    <CustomBuildSection onContact={() => setPage("contact")} />
 
     {/* ── WHAT WE BUILD (the full spectrum) ── */}
     <section style={{ background: C.cream, padding: "clamp(60px, 12vw, 120px) 20px" }}>

@@ -1,4 +1,4 @@
-import { C, R, BigText, Sub, Tag, Line, CTA, ImgBlock, VideoBlock, ServiceHero, Definition, SectionHead, StatBar, StepItem, FeatureCard, Insight, BottomCTA, TierCard, AddOnsBar, CustomBuildSection } from "../shared";
+import { C, R, BigText, Sub, Tag, Line, CTA, ImgBlock, VideoBlock, ServiceHero, Definition, SectionHead, StatBar, StepItem, FeatureCard, Insight, BottomCTA } from "../shared";
 import { InsightLightbulbIcon, InsightTargetIcon } from "../icons";
 import { useState } from "react";
 
@@ -179,78 +179,6 @@ const VideoMarketing = ({ setPage }: { setPage: (p: string) => void }) => (
       { num: "12×", label: "More shares than text+image" },
     ]} />
 
-    {/* ── TIERS (Foundation / Signature / Flagship) ── */}
-    <section style={{ background: C.lightCream, padding: "clamp(60px, 12vw, 120px) 20px" }}>
-      <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-        <SectionHead tag="Service Tiers">
-          CHOOSE YOUR <span style={{ color: C.gold }}>TIER</span>
-        </SectionHead>
-
-        <R>
-          <p style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: "15px", color: C.textMid, lineHeight: 1.7,
-            maxWidth: "750px", marginBottom: "48px",
-          }}>
-            Each tier scales up your video output. Foundation gives you a solid base, Signature expands your content library with strategy, and Flagship delivers full-scale production with priority access.
-          </p>
-        </R>
-
-        <div className="grid-cards">
-          <R>
-            <TierCard
-              tier="FOUNDATION"
-              items={[
-                { name: "Long-Form Videos", detail: "1/month" },
-                { name: "Short-Form Videos", detail: "4/month" },
-                { name: "Branded Photos", detail: "5/month" },
-                { name: "Color Grading" },
-                { name: "Basic Video Strategy" },
-                { name: "Event Coverage", detail: "1/quarter" },
-              ]}
-            />
-          </R>
-          <R delay={0.1}>
-            <TierCard
-              tier="SIGNATURE"
-              label="Most Popular"
-              highlight
-              items={[
-                { name: "Long-Form Videos", detail: "2/month" },
-                { name: "Short-Form Videos", detail: "16/month" },
-                { name: "Branded Photos", detail: "10/month" },
-                { name: "Color Grading" },
-                { name: "Video Strategy & Content Calendar" },
-                { name: "Repurposing Across Platforms" },
-                { name: "Event Coverage", detail: "1/month" },
-              ]}
-            />
-          </R>
-          <R delay={0.2}>
-            <TierCard
-              tier="FLAGSHIP"
-              items={[
-                { name: "Long-Form Videos", detail: "4/month" },
-                { name: "Short-Form Videos", detail: "32/month" },
-                { name: "Branded Photos", detail: "20/month" },
-                { name: "Premium Color Grading" },
-                { name: "Full Video Strategy & Roadmap" },
-                { name: "Repurposing Across Platforms" },
-                { name: "Priority Production Queue" },
-                { name: "Event Coverage", detail: "2/month" },
-              ]}
-            />
-          </R>
-        </div>
-
-        <R delay={0.3}>
-          <AddOnsBar addOns={["Extra Short-Form Videos", "Extra Long-Form Videos"]} />
-        </R>
-      </div>
-    </section>
-
-    {/* ── CUSTOM BUILD ── */}
-    <CustomBuildSection onContact={() => setPage("contact")} />
 
     {/* ── SERVICES GRID ── */}
     <section style={{ background: C.lightCream, padding: "clamp(60px, 12vw, 120px) 20px" }}>

@@ -1,4 +1,4 @@
-import { C, R, BigText, Sub, Tag, Line, CTA, ImgBlock, VideoBlock, ServiceHero, Definition, SectionHead, StatBar, StepItem, FeatureCard, Insight, BottomCTA, TierCard, AddOnsBar, CustomBuildSection } from "../shared";
+import { C, R, BigText, Sub, Tag, Line, CTA, ImgBlock, VideoBlock, ServiceHero, Definition, SectionHead, StatBar, StepItem, FeatureCard, Insight, BottomCTA } from "../shared";
 import { ProblemSolutionIcon, TestimonialIcon, UnboxingIcon, HowToIcon, DayInLifeIcon, InsightBrainIcon, InsightPuzzleIcon } from "../icons";
 import { useState } from "react";
 
@@ -121,73 +121,6 @@ const UGC = ({ setPage }: { setPage: (p: string) => void }) => (
       { num: "91%", label: "Higher view rates on TikTok" },
     ]} />
 
-    {/* ── TIERS (Foundation / Signature / Flagship) ── */}
-    <section style={{ background: C.lightCream, padding: "clamp(60px, 12vw, 120px) 20px" }}>
-      <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-        <SectionHead tag="Service Tiers">
-          CHOOSE YOUR <span style={{ color: C.gold }}>TIER</span>
-        </SectionHead>
-
-        <R>
-          <p style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: "15px", color: C.textMid, lineHeight: 1.7,
-            maxWidth: "750px", marginBottom: "48px",
-          }}>
-            Foundation gets you started with one influencer and one campaign. Signature scales to multiple influencers and cross-platform deployment. Flagship adds custom AI influencers, a full creator strategy, and a dedicated account manager.
-          </p>
-        </R>
-
-        <div className="grid-cards">
-          <R>
-            <TierCard
-              tier="FOUNDATION"
-              items={[
-                { name: "Real Influencer Sourcing", detail: "1 influencer" },
-                { name: "Campaign Management", detail: "1 campaign/month" },
-                { name: "UGC Content Production" },
-              ]}
-            />
-          </R>
-          <R delay={0.1}>
-            <TierCard
-              tier="SIGNATURE"
-              label="Most Popular"
-              highlight
-              items={[
-                { name: "Real Influencer Sourcing", detail: "3 influencers" },
-                { name: "Campaign Management", detail: "2 campaigns/month" },
-                { name: "UGC Content Production" },
-                { name: "Cross-Platform Deployment" },
-                { name: "Performance Reporting" },
-              ]}
-            />
-          </R>
-          <R delay={0.2}>
-            <TierCard
-              tier="FLAGSHIP"
-              items={[
-                { name: "Real Influencer Sourcing", detail: "5+ influencers" },
-                { name: "Custom AI Influencers", detail: "2 AI influencers" },
-                { name: "Campaign Management", detail: "4 campaigns/month" },
-                { name: "UGC Content Production" },
-                { name: "Cross-Platform Deployment" },
-                { name: "Full Creator Strategy" },
-                { name: "Dedicated Account Manager" },
-                { name: "Performance Reporting" },
-              ]}
-            />
-          </R>
-        </div>
-
-        <R delay={0.3}>
-          <AddOnsBar addOns={["Custom AI Influencer Design", "Extra Real Influencers", "Additional Campaigns"]} />
-        </R>
-      </div>
-    </section>
-
-    {/* ── CUSTOM BUILD ── */}
-    <CustomBuildSection onContact={() => setPage("contact")} />
 
     {/* ── THE INFLUENCER AGENCY ── */}
     <section style={{ background: C.cream, padding: "clamp(60px, 12vw, 120px) 20px" }}>
