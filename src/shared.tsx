@@ -230,7 +230,7 @@ export const ServiceHero = ({ tag, titleLine1, titleLine2, subtitle }: { tag: st
     <section style={{
       minHeight: "85vh", display: "flex", alignItems: "flex-end",
       background: `radial-gradient(ellipse at 25% 35%, ${C.greenDim}, transparent 50%), radial-gradient(ellipse at 75% 65%, rgba(201,169,97,0.04), transparent 40%), ${C.lightCream}`,
-      padding: "120px 20px 60px", position: "relative", overflow: "hidden",
+      padding: "60px 20px 60px", position: "relative", overflow: "hidden",
     }}>
       <IslamicPattern opacity={0.04} />
       <GoldRays opacity={0.06} />

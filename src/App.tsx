@@ -75,12 +75,10 @@ const Nav = ({ page, setPage }: { page: string; setPage: (p: string) => void }) 
 
   return (
     <nav style={{
-      position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000,
-      background: scrolled ? "rgba(250,248,243,0.95)" : "transparent",
-      backdropFilter: scrolled ? "blur(16px)" : "none",
-      transition: "all 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
-      padding: scrolled ? "10px 0" : "18px 0",
-      borderBottom: scrolled ? `1px solid ${C.goldDim}` : "none",
+      position: "relative", zIndex: 1000,
+      background: C.lightCream,
+      padding: "18px 0",
+      borderBottom: `1px solid ${C.goldDim}`,
     }}>
       <div style={{
         maxWidth: "1400px", margin: "0 auto", padding: "0 32px",
@@ -337,7 +335,7 @@ const Home = ({ setPage }: { setPage: (p: string) => void }) => (
       minHeight: "100vh", position: "relative", overflow: "hidden",
       background: C.lightCream,
       display: "flex", alignItems: "center", justifyContent: "center",
-      padding: "100px 0 60px",
+      padding: "40px 0 60px",
     }}>
       <div style={{
         position: "absolute", inset: 0,
@@ -512,7 +510,7 @@ const Work = ({ setPage }: { setPage: (p: string) => void }) => (
     <section style={{
       minHeight: "80vh", display: "flex", alignItems: "flex-end",
       background: `radial-gradient(ellipse at 60% 40%, ${C.greenDim}, transparent 50%), ${C.lightCream}`,
-      padding: "120px 20px 60px",
+      padding: "60px 20px 60px",
     }}>
       <div style={{ maxWidth: "1400px", margin: "0 auto", width: "100%" }}>
         <R>
@@ -562,7 +560,7 @@ const About = ({ setPage }: { setPage: (p: string) => void }) => (
     <section style={{
       minHeight: "80vh", display: "flex", alignItems: "flex-end",
       background: `radial-gradient(ellipse at 40% 50%, ${C.goldDim}, transparent 40%), ${C.lightCream}`,
-      padding: "120px 20px 60px",
+      padding: "60px 20px 60px",
     }}>
       <div style={{ maxWidth: "1400px", margin: "0 auto", width: "100%" }}>
         <R>
@@ -791,7 +789,7 @@ const Contact = ({ preselectedService = "" }: { preselectedService?: string }) =
     <div>
       <section style={{
         minHeight: "100vh", display: "flex", alignItems: "center",
-        background: C.lightCream, padding: "120px 20px 60px",
+        background: C.lightCream, padding: "60px 20px 60px",
       }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", width: "100%" }}>
 
