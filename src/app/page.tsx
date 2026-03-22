@@ -1,9 +1,20 @@
-export default function Home() {
+'use client';
+
+import dynamic from 'next/dynamic';
+import { getPageConfig } from '@/lib/scenes';
+
+const ScrollCanvas = dynamic(
+  () => import('@/components/scroll-engine/ScrollCanvas'),
+  { ssr: false }
+);
+
+export default function HomePage() {
+  const config = getPageConfig('homepage');
   return (
-    <main className="flex flex-1 items-center justify-center min-h-screen">
-      <h1 className="font-cinzel text-4xl tracking-widest text-foreground">
-        Ummah Media
-      </h1>
-    </main>
+    <ScrollCanvas
+      pageId={config.pageId}
+      scenes={config.scenes}
+      totalFrames={config.totalFrames}
+    />
   );
 }
