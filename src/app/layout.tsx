@@ -1,18 +1,24 @@
 import type { Metadata } from "next";
-import { Cinzel, Raleway } from "next/font/google";
+import { Bebas_Neue, DM_Sans, Amiri } from "next/font/google";
 import "./globals.css";
 import CinematicNav from "@/components/layout/CinematicNav";
 
-const cinzel = Cinzel({
+const bebasNeue = Bebas_Neue({
   variable: "--font-cinzel",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: "400",
 });
 
-const raleway = Raleway({
+const dmSans = DM_Sans({
   variable: "--font-raleway",
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const amiri = Amiri({
+  variable: "--font-amiri",
+  subsets: ["arabic", "latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cinzel.variable} ${raleway.variable} antialiased`}
+      className={`${bebasNeue.variable} ${dmSans.variable} ${amiri.variable} antialiased`}
     >
       <body>
         <CinematicNav />

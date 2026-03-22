@@ -78,7 +78,7 @@ export default function CinematicNav() {
         </Link>
 
         {/* Bismillah — centered between logo and nav */}
-        <span className="hidden md:block text-white/50 text-sm font-normal" dir="rtl">
+        <span className="hidden md:block text-white/50 text-sm font-normal font-amiri" dir="rtl">
           بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
         </span>
 

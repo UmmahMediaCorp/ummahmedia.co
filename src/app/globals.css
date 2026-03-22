@@ -27,3 +27,7 @@ body {
 .font-cinzel {
   font-family: var(--font-cinzel), serif;
 }
+
+.font-amiri {
+  font-family: var(--font-amiri), serif;
+}
