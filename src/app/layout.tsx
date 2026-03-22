@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Cinzel, Raleway } from "next/font/google";
 import "./globals.css";
 import CinematicNav from "@/components/layout/CinematicNav";
-import Footer from "@/components/layout/Footer";
 
 const cinzel = Cinzel({
   variable: "--font-cinzel",
@@ -35,7 +34,6 @@ export default function RootLayout({
       <body>
         <CinematicNav />
         {children}
-        <Footer />
         <noscript>
           <div style={{ background: '#0a0a0a', color: '#fff', padding: '3rem 1.5rem', fontFamily: 'system-ui, sans-serif' }}>
             <h1 style={{ fontSize: '1.5rem', marginBottom: '1rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Ummah Media</h1>
