@@ -41,3 +41,7 @@ next-env.d.ts
 *.njsproj
 *.sln
 *.sw?
+
+# Generated binary assets (drop real frames in without code changes)
+public/frames/
+public/loops/
