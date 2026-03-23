@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { getPageConfig, type Scene } from '@/lib/scenes';
 import type { ServiceInfo } from '@/lib/services';
 import CinematicLayout from '@/components/layout/CinematicLayout';
+import HeroIntro from '@/components/layout/HeroIntro';
 import ServiceHub from '@/components/interactive/ServiceHub';
 import MiniCTA from '@/components/interactive/MiniCTA';
 import BookingCTA from '@/components/interactive/BookingCTA';
@@ -58,6 +59,7 @@ export default function HomePage() {
   const router = useRouter();
   const config = getPageConfig('homepage');
   const [currentScene, setCurrentScene] = useState<Scene | null>(null);
+  const [showHero, setShowHero] = useState(true);
   const [showHub, setShowHub] = useState(false);
   const [transitioning, setTransitioning] = useState(false);
   const [targetRoute, setTargetRoute] = useState('');
@@ -96,6 +98,7 @@ export default function HomePage() {
 
   return (
     <CinematicLayout>
+      {showHero && <HeroIntro onComplete={() => setShowHero(false)} />}
       <ScrollCanvas
         pageId={config.pageId}
         scenes={config.scenes}
