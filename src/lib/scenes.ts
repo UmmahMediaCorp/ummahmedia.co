@@ -24,7 +24,8 @@ const PAGE_CONFIGS: Record<PageId, PageConfig> = {
     title: 'Homepage',
     totalFrames: 1800,
     scenes: [
-      { id: '1.1', name: 'Bismillah', startFrame: 1, endFrame: 100, text: 'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ', loopId: 'scene-1-1', interactive: null },
+      { id: '0.1', name: 'Darkness', startFrame: 1, endFrame: 73, text: null, loopId: null, interactive: null },
+      { id: '1.1', name: 'Bismillah', startFrame: 74, endFrame: 173, text: 'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ', loopId: 'scene-1-1', interactive: null },
       { id: '1.2', name: 'The Desert Awakens', startFrame: 101, endFrame: 200, text: '1400 years ago, a revolution began.', loopId: 'scene-1-2', interactive: null },
       { id: '1.3', name: 'The Traders', startFrame: 201, endFrame: 350, text: "The first Muslims didn't conquer Indonesia. They traded with it. Excellence was their dawah.", loopId: 'scene-1-3', interactive: null },
       { id: '1.4', name: 'The Inventors', startFrame: 351, endFrame: 500, text: 'They built the first camera. Mapped the stars. Invented algebra.', loopId: 'scene-1-4', interactive: null },

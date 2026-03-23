@@ -26,7 +26,7 @@ describe('getSceneAtFrame', () => {
   it('returns first scene for frame 1', () => {
     const config = getPageConfig('homepage');
     const scene = getSceneAtFrame(config.scenes, 1);
-    expect(scene?.id).toBe('1.1');
+    expect(scene?.id).toBe('0.1');
   });
   it('returns undefined for frame 0', () => {
     const config = getPageConfig('homepage');

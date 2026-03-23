@@ -22,7 +22,7 @@ export function getFramePath(
   tier: ResolutionTier
 ): string {
   const padded = String(frameNumber).padStart(4, '0');
-  return `/frames/${pageId}/${tier}/frame-${padded}.webp`;
+  return `/frames/${pageId}/${tier}/frame-${padded}.png`;
 }
 
 export function getLoopPath(pageId: PageId, loopId: string): string {

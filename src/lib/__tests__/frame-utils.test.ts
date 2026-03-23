@@ -19,15 +19,15 @@ describe('getResolutionTier', () => {
 describe('getFramePath', () => {
   it('generates correct path for homepage desktop frame', () => {
     expect(getFramePath('homepage', 1, 'desktop'))
-      .toBe('/frames/homepage/desktop/frame-0001.webp');
+      .toBe('/frames/homepage/desktop/frame-0001.png');
   });
   it('generates correct path for service page mobile frame', () => {
     expect(getFramePath('brand-development', 42, 'mobile'))
-      .toBe('/frames/brand-development/mobile/frame-0042.webp');
+      .toBe('/frames/brand-development/mobile/frame-0042.png');
   });
   it('pads frame numbers to 4 digits', () => {
     expect(getFramePath('homepage', 1200, 'desktop'))
-      .toBe('/frames/homepage/desktop/frame-1200.webp');
+      .toBe('/frames/homepage/desktop/frame-1200.png');
   });
 });
 
