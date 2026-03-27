@@ -6,7 +6,7 @@ export interface ServiceInfo {
 }
 
 export const SERVICES: ServiceInfo[] = [
-  { id: 'brand-development', name: 'Brand Development', tagline: 'We build anything your brand needs', route: '/brand-development' },
+  { id: 'brand-development', name: 'Brand Development', tagline: 'Your marketing general contractor', route: '/brand-development' },
   { id: 'video-marketing', name: 'Video Marketing', tagline: 'Stories that move hearts', route: '/video-marketing' },
   { id: 'social-media', name: 'Social Media Marketing', tagline: 'Revenue. Not likes.', route: '/social-media' },
   { id: 'ugc-influencer', name: 'UGC & Influencer Agency', tagline: 'Real people. Real influence.', route: '/ugc-influencer' },
